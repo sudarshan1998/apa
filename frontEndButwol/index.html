@@ -1,0 +1,79 @@
+<html>
+<head>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>index</title>
+	<link rel="stylesheet" type="text/css" href="./css/frontendButwol.css">
+	</head>
+	<body>
+		<div class = "container">
+			<div class = "row">
+				<div class = "col-md" >
+					<a href="#">About Us</a>&nbsp&nbsp&nbsp
+					<a href="#">contact Us</a><br><br>
+					<a href = "#"><i class="fa fa-envelope">&nbsp&nbspinfo@gmail.com</i></a>	
+				</div>		&nbsp&nbsp
+				<div class = "col-md" id = "call-us">
+					<a href="#"><i class="fa fa-tty">&nbsp&nbsp9808924053,4990730</i></a>
+			  </div>
+			  <div>
+			  	<a href="#"><h3 id = "logo">LOGO</h3></a>
+			  </div>
+		</div>
+	</div>
+	<div class = "container">
+		<nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
+    <a class="navbar-brand" id = "about" href="#">About</a>
+    <a class="navbar-brand" id = "Services" href="#" style="padding-left: 2%">Services</a>
+    <a class="navbar-brand" id = "Features" href="#" style="padding-left: 2%">Features</a>
+    <a class="navbar-brand" href="#" style="padding-left: 2%">News and Events</a>
+    <a class="navbar-brand" href="#" style="padding-left: 2%">Contact US</a>
+
+  <div id = "links">
+  	<a class="navbar-brand" href = "#" style="padding-left: 2%"><i class="fa fa-twitter-square"></i></a>
+  	<a class="navbar-brand" href = "#" style="padding-left: 2%"><i class="fa fa-facebook-square"></i></a>
+  	<a class="navbar-brand" href = "#" style="padding-left: 2%"><i class="fa fa-camera-retro"></i></a>
+  </div>
+</nav>
+</div>
+
+<div class = "container">
+<div class="w3-content w3-section" id = "images">
+  <img class="mySlides" src="./images/rdr1.jpeg">
+  <img class="mySlides" src="./images/rdr2.jpeg">
+  <img class="mySlides" src="./images/rdr3.jpeg">
+</div>
+<div class="row">
+	<div class="col-md" style="background-color: ">
+		<h3>News and Events</h3><hr>
+		<p>In some countries (e.g., the United States and Canada), essays have become a major part of formal education. Secondary students are taught structured essay formats to improve their writing skills; admission essays are often used by universities in selecting applicants, and in the humanities and social sciences essays are often used as a way of assessing the performance of students during final exams</p>
+	</div>
+	<div class = "col-md">
+				<h3>About Us</h3><hr>
+		<p>In some countries (e.g., the United States and Canada), essays have become a major part of formal education. Secondary students are taught structured essay formats to improve their writing skills; admission essays are often used by universities in selecting applicants, and in the humanities and social sciences essays are often used as a way of assessing the performance of students during final exams</p>
+	</div>
+	<div class = "col-md">
+				<h3>Put A Smile On That Face</h3><hr>
+		<p>In some countries (e.g., the United States and Canada), essays have become a major part of formal education. Secondary students are taught structured essay formats to improve their writing skills; admission essays are often used by universities in selecting applicants, and in the humanities and social sciences essays are often used as a way of assessing the performance of students during final exams</p>
+	</div>
+</div>
+
+	</body>
+</html>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
